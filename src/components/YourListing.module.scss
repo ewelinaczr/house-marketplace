@@ -1,0 +1,76 @@
+.container {
+	margin: 1rem;
+	max-width: 50rem;
+	display: flex;
+	// background-color: white;
+	gap: 1rem;
+	.image {
+		max-width: 20rem;
+		height: 15rem;
+		object-fit: cover;
+	}
+	@media screen and (max-width: 400px) {
+		.image {
+			max-width: 15rem;
+			height: 11rem;
+			object-fit: cover;
+		}
+	}
+	.details {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		justify-content: left;
+		text-align: left;
+
+		.actions {
+			justify-content: right;
+			display: flex;
+			flex-direction: row;
+			gap: 2rem;
+			padding: 0rem;
+			margin-bottom: 1rem;
+			.removeIcon {
+				cursor: pointer;
+			}
+			.editIcon {
+				cursor: pointer;
+			}
+		}
+		.name {
+			display: flex;
+			font-weight: 600;
+			font-size: 2rem;
+			color: #3d3a43;
+			margin: 1rem 0;
+		}
+		.location {
+			display: flex;
+			font-weight: 600;
+			opacity: 0.8;
+			margin: 0rem;
+		}
+		.price {
+			display: flex;
+			font-weight: 600;
+			color: #00cc66;
+			margin: 0rem;
+		}
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.container {
+        flex-direction: column;
+		// background-color: white;
+		gap: 0.2rem;
+		.image {
+            justify-self: center;
+            margin: auto;
+			width: 50rem;
+		}
+        .name {
+			margin: 0.2rem 0;
+		}
+	}
+}

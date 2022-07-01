@@ -1,0 +1,121 @@
+.maingrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	.mainimage {
+		max-width: 100%;
+		height: 100vh;
+		object-fit: cover;
+	}
+	.profile {
+		max-width: 50rem;
+		min-width: 30rem;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 2rem auto;
+		.pageHeader {
+			font-size: 2.4rem;
+			font-weight: 700;
+		}
+		.form {
+			.formLabel {
+				margin-bottom: 0.4rem;
+				font-weight: 600;
+				margin-top: 1rem;
+				display: block;
+			}
+			.formButtons {
+				display: flex;
+				justify-content: space-between;
+				gap: 1rem;
+				align-items: center;
+				margin: 0;
+			}
+			.formInputName {
+				min-width: 30rem;
+				border: 1px solid gray;
+				padding: 0.9rem 1rem;
+				border-radius: 1rem;
+			}
+			.formFlex {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				input {
+					border: 1px solid gray;
+					padding: 0.9rem 1rem;
+					border-radius: 1rem;
+					min-width: 13.5rem;
+				}
+			}
+			.formInputSmall,
+			.formInputAddress,
+			.formInputFile {
+				font-family: "Roboto Condensed", sans-serif;
+				padding: 0.9rem 1rem;
+				border: 1px solid gray;
+			}
+			textarea {
+				min-width: 30rem;
+				height: 4rem;
+				border: 1px solid gray;
+				padding: 0.9rem 1rem;
+				border-radius: 1rem;
+			}
+
+			.formPriceDiv {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				input {
+					width: 100%;
+					border: 1px solid gray;
+					padding: 0.9rem 1rem;
+					border-radius: 1rem;
+				}
+			}
+
+			.formInputFile {
+				min-width: 30rem;
+				border: 1px solid gray;
+				padding: 0.9rem 1rem;
+				margin: 0;
+				border-radius: 1rem;
+			}
+			.formInputFile::-webkit-file-upload-button {
+				background-color: #00cc66;
+				border: none;
+				color: #ffffff;
+				font-weight: 600;
+				padding: 0.5rem 0.75rem;
+				border-radius: 1rem;
+				margin-right: 1rem;
+			}
+			.createListingButton {
+				width: 15rem;
+				margin: auto;
+				cursor: pointer;
+				background: #00cc66;
+				color: #ffffff;
+				font-weight: 400;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.85rem 2rem;
+				margin: 5rem auto;
+				border: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.maingrid {
+		display: grid;
+		grid-template-columns: 1fr;
+		.mainimage {
+			display: none;
+		}
+	}
+}

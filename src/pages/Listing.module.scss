@@ -1,0 +1,115 @@
+.swiperSlideDiv {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.shareIconDiv {
+	cursor: pointer;
+	position: fixed;
+	top: 3%;
+	right: 5%;
+	z-index: 2;
+	background-color: #ffffff;
+	border-radius: 50%;
+	width: 2.2rem;
+	height: 2.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.linkCopied {
+	position: fixed;
+	top: 9%;
+	right: 5%;
+	z-index: 2;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	font-weight: 600;
+}
+.listingDetails {
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+	.listingDetailsBox {
+		margin: 0 2rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		.listingName {
+			font-weight: 700;
+			font-size: 1.4rem;
+		}
+		.discountPrice {
+			padding: 0.4rem 1rem;
+			margin-right: 1rem;
+			background-color: #000000;
+			color: #ffffff;
+			font-size: 1rem;
+			font-weight: 600;
+			display: inline;
+		}
+		.listingType {
+			padding: 0.4rem 1rem;
+			background-color: #00cc66;
+			color: #ffffff;
+
+			display: inline;
+			font-weight: 600;
+			font-size: 1rem;
+			margin-right: 1rem;
+		}
+	}
+	.listingLocation {
+		margin: 0 2rem;
+		margin-top: 0;
+		font-weight: 400;
+	}
+	.listingDetailsList {
+		margin: 0 2rem;
+		margin-top: 2rem;
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+		list-style-type: none;
+		align-items: center;
+		@media screen and (max-width: 700px) {
+			display: grid;
+			justify-content: left;
+			align-items: center;
+			gap: 0.4rem;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		.listingDetailsList li {
+			font-size: 1rem;
+			margin: 0.5rem 0;
+			font-weight: 400;
+			opacity: 0.8;
+		}
+		.listingDetailDiv {
+			display: flex;
+			gap: 1rem;
+			align-items: center;
+		}
+	}
+	.leafletContainer {
+		margin-top: 2rem;
+		width: 100%;
+		height: 250px;
+		overflow-x: hidden;
+		margin-bottom: 3rem;
+	}
+	.primaryButton {
+		width: 15rem;
+		margin: auto;
+		cursor: pointer;
+		background: #00cc66;
+		color: #ffffff;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.85rem 2rem;
+	}
+}

@@ -1,0 +1,94 @@
+.maingrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	.mainimage {
+		max-width: 100%;
+		height: 100vh;
+		object-fit: cover;
+	}
+	.profile {
+		max-width: 50rem;
+		min-width: 30rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin: 2rem auto;
+		.profileHeader {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			.pageHeader {
+				font-size: 2.4rem;
+				font-weight: 800;
+				margin-right: 4rem;
+			}
+			.logOut {
+				color: white;
+				cursor: pointer;
+				background-color: #00cc66;
+				padding: 0.5rem 1rem;
+				border-radius: 1rem;
+			}
+		}
+		.profileDetailsHeader {
+			// width: auto;
+			margin: 0rem 8rem;
+			max-width: 50rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.profileDetailsText {
+				// font-weight: 600;
+			}
+			.changePersonalDetails {
+				color: white;
+				cursor: pointer;
+				background-color: #00cc66;
+				padding: 0.5rem 1rem;
+				border-radius: 1rem;
+			}
+		}
+		.profileCard {
+			border-radius: 1rem;
+			padding: 1rem;
+		}
+		.createListing {
+			margin: 2rem 3rem;
+			// max-width: 40rem;
+			color: white;
+			background-color: #00cc66;
+			border-radius: 1rem;
+			padding: 0.25rem 1rem;
+			display: flex;
+			justify-content: space-between;
+			// align-items: center;
+		}
+		.listingText {
+			margin-top: 3rem;
+			font-weight: 600;
+		}
+		.listingsList {
+			max-width: 50rem;
+			padding: 0;
+			.listingItemLi {
+				max-width: 50rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:700px) {
+	.maingrid {
+		display: grid;
+		grid-template-columns: 1fr;
+		.mainimage {
+			display: none;
+		}
+		.profile{
+			margin: 2rem 3rem;
+		}
+	}
+}

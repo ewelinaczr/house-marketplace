@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+html {
+	font-size: 62.5%;
+	color: #3d3a43;
+} /* =10px */
+body {
+	font-size: 1.4rem;
+	background-color: #f2f3f3;
+	color: #3d3a43;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto Condensed", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+} /* =14px */
+h1 {
+	font-size: 2.4rem;
+	color: #3d3a43;
+} /* =24px */
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+a {
+	text-decoration: none;
+	color: #3d3a43;
+}
+button {
+	border: none;
+}
+
+/* NAVBAR */
+.navbarListItemName,
+.navbarListItemNameActive {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #8f8f8f;
+}
+.navbarListItemNameActive {
+	color: #2c2c2c;
+}
+
+/* PROFILE */
+
+.profileName,
+.profileEmail,
+.profileAddress,
+.profileAddressActive,
+.profileEmailActive,
+.profileNameActive {
+	min-width: 25rem;
+	margin: 1rem auto;
+	border: none;
+	background: #ffffff;
+	border-radius: 3rem;
+	height: 3rem;
+	outline: none;
+	padding: 0 3rem;
+}
+.profileNameActive {
+	background-color: white;
+}
+
+.profileEmail,
+.profileAddress,
+.profileAddressActive,
+.profileEmailActive {
+	font-weight: 500;
+}
+.profileEmailActive {
+	background-color: white;
+}
+
+.profileAddressActive {
+	background-color: white;
+}
+
+
+
+
+/* CREATE EDIT OFFER  */
+.formButton,
+.formButtonActive {
+	width: 100%;
+	padding: 0.9rem 3rem;
+	background-color: #ffffff;
+	font-weight: 600;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid gray;
+}
+.formButtonActive {
+	background-color: #00cc66;
+	border: none;
+	color: #ffffff;
+}
+
+/* MEDIA QUERRY */
+@media screen and (max-width: 400px) {
+	/* html {
+		font-size: 62.5%;
+	} */
+	body {
+		/* font-size: 1rem; */
+		background-color: #f2f3f3;
+		color: #3d3a43;
+	} /* =14px */
+}

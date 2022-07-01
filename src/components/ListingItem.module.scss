@@ -1,0 +1,109 @@
+.categoryListing {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	position: relative;
+	.categoryListingLink {
+		// background-color: greenyellow;
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+		.categoryListingImg {
+			max-width: 320px;
+			height: 220px;
+			object-fit: cover;
+		}
+
+		.categoryListingDetails {
+			.categoryListingLocation {
+				font-weight: 600;
+				opacity: 0.8;
+				margin-bottom: 0;
+			}
+
+			.categoryListingName {
+				font-weight: 600;
+				margin: 0;
+				font-size: 2rem;
+				color: #3d3a43;
+			}
+			@media screen and (max-width: 400px) {
+				.categoryListingName {
+					font-weight: 600;
+					margin: 0;
+					font-size: 1.6rem;
+					color: #3d3a43;
+				}
+			}
+
+			.categoryListingPrice {
+				margin-top: 0.5rem;
+				font-weight: 600;
+				color: #00cc66;
+				margin-bottom: 0;
+				display: flex;
+				align-items: center;
+			}
+			.categoryListingInfoDiv {
+				display: flex;
+				gap: 2rem;
+				justify-content: space-between;
+				max-width: 275px;
+				color: #3d3a43;
+				.categoryListingOnfoBox {
+					display: flex;
+					flex-direction: row;
+					gap: 0.5rem;
+					align-items: center;
+					text-align: center;
+					.categoryListingInfoText {
+						font-weight: 500;
+						display: flex;
+						flex-direction: row;
+					}
+				}
+			}
+			@media screen and (max-width: 400px) {
+				.categoryListingInfoDiv {
+					gap: 1rem;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.categoryListingLink {
+			gap: 1rem;
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+	.categoryListingImg {
+		width: 200px;
+		max-height: 150px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.categoryListingImg {
+		width: 320px;
+		max-height: 180px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.categoryListingImg {
+		width: 160px;
+		max-height: 120px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.categoryListingImg {
+		width: 120px;
+		max-height: 120px;
+	}
+}

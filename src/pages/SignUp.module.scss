@@ -1,0 +1,113 @@
+.maingrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	.mainimage {
+		max-width: 100%;
+		height: 100vh;
+		object-fit: cover;
+	}
+	.pageContainer {
+		// background-color: yellowgreen;
+		max-width: 50rem;
+		min-width: 25rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin: 2rem auto;
+		.pageHeader {
+			font-size: 2.4rem;
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			.nameInput {
+				min-width: 25rem;
+				margin: 1rem auto;
+				border: none;
+				background: #ffffff;
+				border-radius: 3rem;
+				height: 3rem;
+				outline: none;
+				padding: 0 3rem;
+			}
+			.emailInput {
+				min-width: 25rem;
+				margin: 1rem auto;
+				border: none;
+				background: #ffffff;
+				border-radius: 3rem;
+				height: 3rem;
+				outline: none;
+				padding: 0 3rem;
+			}
+			.passwordInputDiv {
+				position: relative;
+				.passwordInput {
+					min-width: 25rem;
+					margin: 1rem auto;
+					border: none;
+					background: #ffffff;
+					border-radius: 3rem;
+					height: 3rem;
+					outline: none;
+					padding: 0 3rem;
+				}
+				.showPassword {
+					cursor: pointer;
+					position: absolute;
+					top: 1.2rem;
+					right: 1rem;
+				}
+			}
+		}
+		.forgotPasswordLink {
+			cursor: pointer;
+			color: #00cc66;
+			font-weight: 600;
+		}
+		.signUpBar {
+			margin-top: 2rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 2rem;
+			position: inherit;
+			.signUpText {
+				font-weight: 700;
+				cursor: pointer;
+			}
+			.signUpButton {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 3rem;
+				height: 3rem;
+				background-color: #00cc66;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+		}
+		.registerLink {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		span {
+			margin-left: 1rem;
+			font-weight: 700;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.maingrid {
+		display: grid;
+		grid-template-columns: 1fr;
+		.mainimage {
+			display: none;
+		}
+	}
+}
