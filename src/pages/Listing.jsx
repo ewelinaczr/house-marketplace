@@ -182,7 +182,7 @@ function Listing() {
 						<TileLayer
 							attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 							url='https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token={accessToken}'
-							accessToken='fElGWZYxxgueICNyPdR4dlQ4lmAjNGfBQKkdmlGwUhoGWBx0kVe987l8KAz4NAPD'
+							accessToken={process.env.REACT_APP_LEAFLET_API_KEY}
 						/>
 
 						<Marker
