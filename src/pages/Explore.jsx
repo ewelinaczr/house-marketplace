@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import rentCategoryImage from "./../assets/jpg/rent.avif";
-import sellCategoryImage from "./../assets/jpg/rent1.avif";
+import rentCategoryImage from "./../assets/jpg/rent.jpg";
+import sellCategoryImage from "./../assets/jpg/rent1.jpg";
 import Slider from "../components/Slider";
 import styles from "./Explore.module.scss";
 

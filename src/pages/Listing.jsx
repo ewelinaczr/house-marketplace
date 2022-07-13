@@ -115,7 +115,7 @@ function Listing() {
 									.toString()
 									.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
 					</p>
-					<div>
+					<div className={styles.listinglabels}>
 						{listing.offer && (
 							<p className={styles.discountPrice}>
 								${listing.regularPrice - listing.discountedPrice} discount

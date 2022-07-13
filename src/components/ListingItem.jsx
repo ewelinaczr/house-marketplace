@@ -24,7 +24,7 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
 	// console.log(listing);
 	return (
 		<li className={styles.categoryListing}>
-			<div className={styles.actionsbar}>
+			{/* <div className={styles.actionsbar}>
 				{onDelete && (
 					<DeleteIcon
 						className={styles.removeIcon}
@@ -39,7 +39,7 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
 						onClick={() => onEdit(listing.id)}
 					/>
 				)}
-			</div>
+			</div> */}
 			<Link
 				to={`/category/${listing.type}/${id}`}
 				className={styles.categoryListingLink}

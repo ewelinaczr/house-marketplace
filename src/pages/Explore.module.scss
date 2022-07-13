@@ -42,9 +42,8 @@
 	}
 }
 
-// @media screen and (max-width: 400px) {
-// 	.exploreCategoryName,
-// 	.exploreCategoryNameSale {
-// 		font-size: 2rem;
-// 	}
-// }
+@media screen and (max-width: 400px) {
+	.explore {
+		margin: 1rem;
+	}
+}

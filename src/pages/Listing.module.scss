@@ -113,3 +113,20 @@
 		padding: 0.85rem 2rem;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	.listingDetailsBox {
+		margin: 0 0rem;
+		.listinglabels {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+		.discountPrice {
+			margin: 0;
+		}
+		.listingType {
+			margin: 0;
+		}
+	}
+}

@@ -1,15 +1,19 @@
 .categoryListing {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	width: 100%;
+	max-width: 100%;
 	position: relative;
+	// background-color: red;
+	gap: 0rem;
+	margin: 0;
+	padding: 0;
 	.categoryListingLink {
-		// background-color: greenyellow;
 		display: flex;
 		flex-direction: row;
-		gap: 2rem;
+		gap: 3rem;
 		justify-content: center;
 		align-items: center;
+		// background-color: yellow;
 		.categoryListingImg {
 			max-width: 320px;
 			height: 220px;
@@ -74,13 +78,10 @@
 	}
 	@media screen and (max-width: 400px) {
 		.categoryListingLink {
-			gap: 1rem;
+			gap: 1.6rem;
 		}
 	}
 }
-
-
-
 
 @media screen and (max-width: 1300px) {
 	.categoryListingImg {

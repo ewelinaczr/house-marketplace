@@ -35,3 +35,10 @@
 .swiper-pagination-bullet-active {
 	background-color: #ffffff !important;
 }
+
+@media screen and (max-width: 400px) {
+	.swipercontainer {
+		min-height: 250px;
+		height: 35vw;
+	}
+}
