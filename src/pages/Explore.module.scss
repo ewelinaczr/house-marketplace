@@ -6,6 +6,9 @@
 		gap: 2rem;
 		justify-content: space-between;
 		height: 20rem;
+		@media screen and (max-width: 500px) {
+			gap: 1rem;
+		}
 		.exploreCategoryBox {
 			position: relative;
 			.exploreCategoryImg {
